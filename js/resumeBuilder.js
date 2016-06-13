@@ -21,7 +21,7 @@ var bio = {
     },
     "picture" : "images/mypic.JPG",
     "welcome_message" : "Welcome to my Resume",
-    "skills" : ["HTML", " CSS", " JavaScript"],
+    "skills" : ["HTML", "CSS", "JavaScript", "Git"],
     display : function myFunction() {}
 };
 
@@ -47,6 +47,8 @@ if (bio.skills.length > 0) {
     formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
     $("#skills").append(formattedSkill);
     formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
     $("#skills").append(formattedSkill);
 };
 
